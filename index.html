@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Professional E-Book Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{box-sizing:border-box;font-family: "Segoe UI", sans-serif;}
+body{margin:0;background:#f2f5f9;color:#333;}
+header{background:linear-gradient(135deg,#0a3cff,#0024a8);color:#fff;padding:30px;text-align:center;}
+nav{margin-top:15px;}
+nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:600;}
+section{max-width:1200px;margin:auto;padding:40px 20px;}
+h2{text-align:center;margin-bottom:30px;}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+.card{background:#fff;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.1);padding:20px;transition:0.3s;}
+.card:hover{transform:translateY(-6px);}
+.card img{width:100%;border-radius:10px;}
+.price{color:#0a3cff;font-size:20px;font-weight:bold;}
+button{width:100%;padding:12px;border:none;background:#0a3cff;color:#fff;border-radius:8px;cursor:pointer;font-size:15px;}
+button:hover{background:#0024a8;}
+.payment-box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.1);}
+.payment-box p{margin:10px 0;font-size:15px;}
+.add-product{background:#fff;padding:30px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.1);}
+label{font-weight:600;display:block;margin-top:15px;}
+input,textarea,select{width:100%;padding:10px;margin-top:6px;}
+footer{background:#111;color:#fff;text-align:center;padding:25px;margin-top:40px;}
+footer a{color:#0a3cff;text-decoration:none;}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>📘 Professional E-Book Store</h1>
+  <p>Buy Digital Books • Secure Payments • Instant Delivery</p>
+  <nav>
+    <a href="#store">Store</a>
+    <a href="#payment">Payments</a>
+    <a href="#add">Add Product</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="store">
+  <h2>📚 Our E-Books</h2>
+  <div class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x400">
+      <h3>AI Prompt Mastery</h3>
+      <p>Learn powerful AI prompts to automate and earn.</p>
+      <p class="price">Rs. 999</p>
+      <button onclick="buyNow('AI Prompt Mastery', 999)">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x400">
+      <h3>Online Business Guide</h3>
+      <p>Step-by-step guide to start earning online.</p>
+      <p class="price">Rs. 799</p>
+      <button onclick="buyNow('Online Business Guide', 799)">Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="payment">
+  <h2>💳 Payment Information</h2>
+  <div class="payment-box">
+
+    <p><b>🏦 HBL Bank Account</b><br>
+    Account Number: <b>8477901264403</b></p>
+
+    <p><b>📱 Easypaisa</b><br>
+    Mobile Number: <b>03407918743</b></p>
+
+    <p><b>📱 JazzCash</b><br>
+    Mobile Number: <b>03065124134</b></p>
+
+    <p style="color:green;">
+      ✔ After payment verification, the e-book will be <b>automatically emailed</b> to the customer.
+    </p>
+
+  </div>
+</section>
+
+<section id="add">
+  <h2>➕ Add New E-Book (Admin)</h2>
+  <div class="add-product">
+    <form>
+      <label>E-Book Title</label>
+      <input type="text" placeholder="Enter book title">
+
+      <label>Description</label>
+      <textarea rows="4" placeholder="Enter e-book details"></textarea>
+
+      <label>Price (PKR)</label>
+      <input type="number" placeholder="Enter price">
+
+      <label>Upload Cover Image</label>
+      <input type="file">
+
+      <label>Upload PDF File</label>
+      <input type="file">
+
+      <br><br>
+      <button type="submit">Add Product</button>
+    </form>
+    <p style="color:gray;margin-top:10px;">
+      * Admin panel backend required to save products permanently.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>📞 Contact & Information</h2>
+  <div class="payment-box">
+    <p><b>Email:</b> ali.ben9626@gmail.com</p>
+    <p><b>Contact Number:</b> 03407918743</p>
+    <p>Customer Support Available 24/7</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Professional E-Book Store</p>
+  <p>Secure • Trusted • Digital Products</p>
+</footer>
+
+<script>
+// Frontend demo: Buy Now button
+function buyNow(title, price){
+  alert("You selected '"+title+"' for Rs."+price+".\nPlease complete payment using Bank/Easypaisa/JazzCash.\nAfter verification, the e-book will be emailed automatically.");
+}
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Professional E-Book Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{box-sizing:border-box;font-family: "Segoe UI", sans-serif;}
+body{margin:0;background:#f2f5f9;color:#333;}
+header{background:linear-gradient(135deg,#0a3cff,#0024a8);color:#fff;padding:30px;text-align:center;}
+nav{margin-top:15px;}
+nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:600;}
+section{max-width:1200px;margin:auto;padding:40px 20px;}
+h2{text-align:center;margin-bottom:30px;}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+.card{background:#fff;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.1);padding:20px;transition:0.3s;}
+.card:hover{transform:translateY(-6px);}
+.card img{width:100%;border-radius:10px;}
+.price{color:#0a3cff;font-size:20px;font-weight:bold;}
+button{width:100%;padding:12px;border:none;background:#0a3cff;color:#fff;border-radius:8px;cursor:pointer;font-size:15px;}
+button:hover{background:#0024a8;}
+.payment-box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.1);}
+.payment-box p{margin:10px 0;font-size:15px;}
+.add-product{background:#fff;padding:30px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.1);}
+label{font-weight:600;display:block;margin-top:15px;}
+input,textarea,select{width:100%;padding:10px;margin-top:6px;}
+footer{background:#111;color:#fff;text-align:center;padding:25px;margin-top:40px;}
+footer a{color:#0a3cff;text-decoration:none;}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>📘 Professional E-Book Store</h1>
+  <p>Buy Digital Books • Secure Payments • Instant Delivery</p>
+  <nav>
+    <a href="#store">Store</a>
+    <a href="#payment">Payments</a>
+    <a href="#add">Add Product</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="store">
+  <h2>📚 Our E-Books</h2>
+  <div class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x400">
+      <h3>AI Prompt Mastery</h3>
+      <p>Learn powerful AI prompts to automate and earn.</p>
+      <p class="price">Rs. 999</p>
+      <button onclick="buyNow('AI Prompt Mastery', 999)">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x400">
+      <h3>Online Business Guide</h3>
+      <p>Step-by-step guide to start earning online.</p>
+      <p class="price">Rs. 799</p>
+      <button onclick="buyNow('Online Business Guide', 799)">Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="payment">
+  <h2>💳 Payment Information</h2>
+  <div class="payment-box">
+
+    <p><b>🏦 HBL Bank Account</b><br>
+    Account Number: <b>8477901264403</b></p>
+
+    <p><b>📱 Easypaisa</b><br>
+    Mobile Number: <b>03407918743</b></p>
+
+    <p><b>📱 JazzCash</b><br>
+    Mobile Number: <b>03065124134</b></p>
+
+    <p style="color:green;">
+      ✔ After payment verification, the e-book will be <b>automatically emailed</b> to the customer.
+    </p>
+
+  </div>
+</section>
+
+<section id="add">
+  <h2>➕ Add New E-Book (Admin)</h2>
+  <div class="add-product">
+    <form>
+      <label>E-Book Title</label>
+      <input type="text" placeholder="Enter book title">
+
+      <label>Description</label>
+      <textarea rows="4" placeholder="Enter e-book details"></textarea>
+
+      <label>Price (PKR)</label>
+      <input type="number" placeholder="Enter price">
+
+      <label>Upload Cover Image</label>
+      <input type="file">
+
+      <label>Upload PDF File</label>
+      <input type="file">
+
+      <br><br>
+      <button type="submit">Add Product</button>
+    </form>
+    <p style="color:gray;margin-top:10px;">
+      * Admin panel backend required to save products permanently.
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>📞 Contact & Information</h2>
+  <div class="payment-box">
+    <p><b>Email:</b> ali.ben9626@gmail.com</p>
+    <p><b>Contact Number:</b> 03407918743</p>
+    <p>Customer Support Available 24/7</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Professional E-Book Store</p>
+  <p>Secure • Trusted • Digital Products</p>
+</footer>
+
+<script>
+// Frontend demo: Buy Now button
+function buyNow(title, price){
+  alert("You selected '"+title+"' for Rs."+price+".\nPlease complete payment using Bank/Easypaisa/JazzCash.\nAfter verification, the e-book will be emailed automatically.");
+}
+</script>
+
+</body>
+</html>
